@@ -1,0 +1,35 @@
+<form (submit)="formSubmit()">
+  <label for="PostTitle">Post Title</label>
+  <input
+    [(ngModel)]="formDate.title"
+    id="PostTitle"
+    name="PostTitle"
+    type="text"
+    placeholder="Enter Post Title"
+    class="bg-white border-gray-300 border p-2 rounded-md"
+  />
+  <label for="PostDescription">Post Description</label>
+  <textarea
+    [(ngModel)]="formDate.description"
+    id="PostDescription"
+    placeholder="Write Your Post Description"
+    name="PostDescription"
+    cols="30"
+    rows="5"
+    class="bg-white border-gray-300 border p-2 rounded-md"
+  >
+  </textarea>
+  <div class="form_post_image_section">
+    <p>Image(Optional)</p>
+    <label for="PostImage">Post Image</label>
+    <input
+      placeholder="Choose a File"
+      [(ngModel)]="formDate.postImage"
+      type="file"
+      name="PostImage"
+      id="PostImage"
+      class="bg-white border-gray-300 border p-2 rounded-md"
+    />
+  </div>
+  <button type="submit">Publish Post</button>
+</form>

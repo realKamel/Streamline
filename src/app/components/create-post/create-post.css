@@ -1,0 +1,41 @@
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed var(--main-accent-color);
+  padding: 20px;
+  gap: 10px;
+  border-radius: 12px;
+}
+
+form textarea {
+  padding: var(--main-padding);
+  border-radius: var(--main-radius);
+  resize: none;
+}
+
+.form_post_image_section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+form #PostImage {
+  padding: 20px;
+  border-radius: var(--main-radius);
+  background-color: white;
+  border: 1px solid var(--main-accent-color);
+}
+
+form button[type='submit'] {
+  width: 50%;
+  margin: auto;
+  background: var(--main-accent-color);
+  color: white;
+  padding: 10px 7px;
+  border-radius: var(--main-radius);
+  transition: all 100ms;
+  cursor: pointer;
+}
+form button[type='submit']:active {
+  transform: scale(99%);
+}
