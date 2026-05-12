@@ -1,0 +1,73 @@
+.navbar {
+  padding: 12px;
+  border-radius: 12px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px rgb(231, 231, 231);
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.inner_nav h3 {
+  color: var(--main-accent-color);
+}
+.inner_nav div a {
+  text-decoration: none;
+  position: relative;
+  color: black;
+  width: 50px;
+  text-align: center;
+  transition: all 100ms;
+}
+
+.inner_nav div a:active {
+  transform: scale(99%);
+}
+
+.active_link {
+  color: cornflowerblue;
+}
+.active_link::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  content: '';
+  border-radius: 12px;
+  background-color: rgba(41, 99, 206, 0.149);
+}
+.inner_nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.inner_nav h3 span {
+  text-decoration-line: underline;
+}
+
+.inner_nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.control_icons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.control_icons div {
+  transition: all 100ms;
+  cursor: pointer;
+}
+.control_icons div:active {
+  transform: scale(99%);
+}
