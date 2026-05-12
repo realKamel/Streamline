@@ -1,0 +1,23 @@
+footer div p {
+  font-size: small;
+}
+footer {
+  padding: 5px;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_text_style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.footer_text_style span {
+  display: block;
+  font-size: small;
+  text-align: center;
+}
