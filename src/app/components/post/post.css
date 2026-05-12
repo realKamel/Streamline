@@ -1,0 +1,16 @@
+.card {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 1px 1px rgba(189, 189, 189, 0.189);
+  position: relative;
+  transition: all 100ms;
+}
+
+.card:active {
+  transform: scale(99%);
+}
+.card:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
