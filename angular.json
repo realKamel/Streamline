@@ -5,7 +5,11 @@
   "projects": {
     "Streamline": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:application": {
+          "inlineStyle": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
