@@ -6,8 +6,8 @@
     "Streamline": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:application": {
-          "inlineStyle": false
+        "@schematics/angular:component": {
+          "inlineStyle": true
         }
       },
       "root": "",
